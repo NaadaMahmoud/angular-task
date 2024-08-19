@@ -16,12 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 
 // Factory function for the translation loader
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-}
-// export function HttpLoaderFactory(http: HttpClient) {
-//   return new TranslateHttpLoader(http);
-// }
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,3 +47,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
