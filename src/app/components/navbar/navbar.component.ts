@@ -25,4 +25,3 @@ export class NavbarComponent implements OnInit {
 
 
 
-// console.log(`Switching to language: ${lang}`);  
