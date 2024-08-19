@@ -1,6 +1,7 @@
 .unique-photo img{
     width: 100%;
  }
+ 
  @keyframes slideInRight {
     from {
         transform: translateX(100%);
